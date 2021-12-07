@@ -32,7 +32,7 @@ const handler = (func) => (req, res) => {
     }
 };
 
-app.get('/', (req, res) => res.send('This is the landing page. Change to "/success" or "/error" for logging test (Updated)'))
+app.get('/', (req, res) => res.send('This is the landing page. Change to "/success" or "/error" for logging test Updated'))
 app.get('/success', handler((req, res) => { res.send('Yay!'); }))
 app.get('/error', handler((req, res) => { throw new Error('Doh!'); }))
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
